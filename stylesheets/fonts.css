@@ -1,0 +1,27 @@
+/* Fonts CSS */
+
+/* Подключение HSESans-Bold */
+@font-face {
+  font-family: "HSESans";
+  src: url("../fonts/HSESans-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Подключение HSESans-Regular */
+@font-face {
+  font-family: "HSESans";
+  src: url("../fonts/HSESans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Применение шрифта к элементам */
+body {
+  font-family: "Oswald";
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Light.ttf") format("truetype");
+  font-weight: Light;
+  font-style: normal;
+}
