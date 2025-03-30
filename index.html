@@ -8,6 +8,220 @@
     <script src="javascripts/js-animation.js"></script>
   </head>
   <body>
-    <p>help</p>
+    <section class="first_screen">
+      <div id="clickable-div_1"></div>
+
+      <!-- Второй div, который будет появляться -->
+      <div id="hidden-div_1"></div>
+      <div id="clickable-div_2"></div>
+
+      <!-- Второй div, который будет появляться -->
+      <div id="hidden-div_2"></div>
+      <div id="clickable-div_3"></div>
+
+      <!-- Второй div, который будет появляться -->
+      <div id="hidden-div_3"></div>
+      <div id="clickable-div_4"></div>
+
+      <!-- Второй div, который будет появляться -->
+      <div id="hidden-div_4"></div>
+      <div id="clickable-div_5"></div>
+
+      <!-- Второй div, который будет появляться -->
+      <div id="hidden-div_5"></div>
+      <div class="animated-logo logo_main"></div>
+      <div class="animated-logo border_logo"></div>
+      <div id="hidden-div_8" class="animated-logo logo_light"></div>
+      <div class="animated-logo logo_1"></div>
+      <div class="animated-logo logo_2"></div>
+      <div class="animated-logo logo_3"></div>
+      <div class="animated-logo logo_4"></div>
+      <div class="animated-logo logo_5"></div>
+      <div class="animated-logo logo_6"></div>
+      <div id="clickable-div_6" class="animated-logo logo_7"></div>
+      <div class="provodochcki"></div>
+      <div class="carta"></div>
+      <div id="hidden-div_7" class="carta_cvet"></div>
+      <p class="text_firstecran target">КАРТА ФЕСТИВАЛЯ</p>
+      <p class="text_carta_1 target">активности феста</p>
+      <p class="text_carta_2 target">ваше местоположение</p>
+      <div class="border_karta color_1"></div>
+      <div class="border_mini color_2"></div>
+      <div class="tochka_karta_6"></div>
+      <div class="krujok_1"></div>
+      <!-- <div class="krujok_2"></div> -->
+      <div class="track-container">
+        <svg
+          class="track"
+          viewBox="0 0 900 400"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- <style="width: 61.5vw; height: 29.4vw; margin-top: 11.6vw; margin-left:
+          19vw;"> -->
+          <!-- Путь контура карты -->
+          <path
+            id="track-path"
+            fill="none"
+            stroke="none"
+            stroke-width="2"
+            d="M22.6,278.5l-12.2-20c-2.2-3.6-2.8-7.9-1.7-12l4.1-15.2c0.7-2.4,1.9-4.6,3.6-6.4l74.6-79.5
+	c2.8-3,6.8-4.7,10.9-4.7c8.2,0,14.9-6.7,14.9-14.9v-22.3c0-4,1.6-7.9,4.5-10.8l5-5c1.8-1.8,4-3.1,6.4-3.8l55.4-16.8
+	c4.2-1.3,7.6-4.2,9.4-8.2l6.8-14.5c0.7-1.5,1.6-2.8,2.7-4l6.2-6.6c2.3-2.5,5.4-4.1,8.7-4.6l41-6.6c0.8-0.1,1.6-0.2,2.4-0.2h13
+	c2.2,0,4.4-0.5,6.4-1.4l18.3-8.5l8.7-3.3c2.3-0.9,4.8-1.2,7.3-0.8l32.1,4.1h7.6c3.5,0,6.9,1.2,9.6,3.4l6.7,5.4
+	c0.9,0.7,1.7,1.5,2.4,2.4L429.9,91c0.8,1.1,1.5,2.2,2.1,3.5l23.5,56c1.1,2.6,2.9,4.8,5.1,6.5l46.1,33.4l11.4,9.5
+	c1.6,1.3,2.8,2.9,3.8,4.7l6.5,12.5c1.3,2.5,1.9,5.4,1.7,8.2l-2.4,31c-0.2,2.7,1.1,5.2,3.4,6.6c3.4,2.1,7.9,1,9.9-2.5l18.8-32.8
+	c0.8-1.4,1.8-2.6,2.9-3.7l7.4-6.8l3.6-4.4c2.5-3,6.3-4.8,10.2-4.8c1.4,0,2.9,0.2,4.2,0.7l7.9,2.6c1,0.3,2,0.8,2.9,1.3l3.3,1.9
+	c2.9,1.7,5.2,4.4,6.5,7.5l8.7,21.8l10.7,32.8c0.5,1.5,1.3,2.9,2.3,4c2.8,3.1,7.1,4.5,11.1,3.5l0.4-0.1c3.7-0.9,6.8-3.4,8.4-6.9
+	l27.6-62.5c0.8-1.9,2.1-3.6,3.6-5l6.5-6c1.3-1.2,2.7-2.1,4.3-2.8l4.2-1.8c3.6-1.6,7.7-1.7,11.4-0.3l8.7,3.2l10.7,2.5
+	c1.5,0.4,3,1,4.4,1.8l9.4,5.6l7.5,6c2.5,2,4.4,4.8,5.2,8l1.2,4.7c0.3,1.3,0.5,2.6,0.5,3.9v7.6c0,1.2-0.2,2.5-0.5,3.7l-0.7,2.8
+	c-1.2,4.8-4.6,8.6-9.1,10.5l-4.2,1.7l-7.6,4.1c-2.5,1.3-4.5,3.4-5.9,5.8l-0.6,1.1c-1.7,3.2-1.9,6.9-0.4,10.2c1.9,4.3,6.1,7,10.7,7
+	h0.8H748c2.9,0,5.7-0.8,8.1-2.4l8.3-5.3c1.6-1,3.4-1.7,5.3-2.1l6.1-1.2c4.5-0.9,9.1,0.5,12.4,3.5c2.9,2.7,4.6,6.5,4.6,10.5v12
+	c0,2.5-0.6,5-1.8,7.3l-10.7,19.7c-1.8,3.3-4.7,5.8-8.3,7.1l-13.6,4.9l-29,9.2l-44.6,16.1c-1.3,0.5-2.7,0.8-4.1,0.9l-49.8,3.7h-53.3
+	c-2.6,0-5.1-0.7-7.4-1.9l-25.5-14.1L506.7,333l-21.4-16l-15.6-12.7c-0.8-0.7-1.6-1.4-2.2-2.2l-24.2-30l-30.5-33.1
+	c-3.4-3.7-8.3-5.4-13.2-4.8l-15,2h-7.3c-2.7,0-5.3-0.7-7.6-2.1l-3.3-1.9c-4.7-2.7-7.6-7.8-7.6-13.2v-2.6v-14.5
+	c0-2.9-2.4-5.3-5.3-5.3c-1.5,0-2.9-0.6-3.9-1.7l-4.4-4.8c-1.6-1.7-2.8-3.8-3.4-6.1l-3.6-12.6l-3-11.8c-0.6-2.3-1.6-4.4-3.2-6.2
+	l-4.9-5.7c-0.8-1-1.8-1.9-2.8-2.6l-15-10.6c-1.1-0.8-2.2-1.8-3-2.9L295.4,118c-0.5-0.6-0.9-1.3-1.3-2l-7.8-13.5l-6.6-9
+	c-1.2-1.6-2.6-2.9-4.3-4l-3.7-2.3c-2.4-1.5-5.2-2.3-8-2.3h-4.3c-0.9,0-1.8,0.1-2.6,0.2l-16.3,2.8l-13.8,2.3c-3,0.5-5.7,1.9-7.9,3.9
+	l-4,3.8c-3.1,2.9-4.8,6.9-4.8,11.1v5.2c0,1.8-0.3,3.6-0.9,5.3l-5.1,13.7c-1,2.8-2.9,5.2-5.3,7l-7.8,5.7l-12.5,9
+	c-0.8,0.6-1.6,1.3-2.2,2l-8,8.6c-0.6,0.7-1.2,1.4-1.7,2.1l-3.6,5.6c-1.6,2.6-4,4.6-6.8,5.8l-8.8,3.8c-1.9,0.8-3.9,1.2-6,1.2H129
+	h-4.6c-4.8,0-9.3,2.3-12.2,6.1l-3.5,4.6c-0.7,1-1.6,1.9-2.5,2.7l-5.1,4.2c-1.2,1-2.3,2.2-3.1,3.5l-5.7,8.8c-0.9,1.4-2,2.7-3.4,3.7
+	l-9.4,7.4c-2.1,1.6-3.7,3.7-4.7,6.2l-2.7,6.5c-0.8,1.8-1.1,3.8-1.1,5.8v15.5c0,1.9,0.4,3.8,1,5.5l2.8,7.3c1,2.5,1.3,5.2,0.9,7.8
+	l-0.2,1.4c-0.9,6-5.2,10.9-11.1,12.5l-5.2,1.4c-1.3,0.4-2.7,0.5-4,0.5h-8.8c-3.8,0-7.5-1.4-10.3-4l-10.8-9.8
+	C24.3,280.8,23.4,279.7,22.6,278.5z"
+          />
+
+          <!-- Точка, которая будет двигаться по пути -->
+          <circle
+            class="circle"
+            id="moving-dot"
+            cx="0"
+            cy="0"
+            r="8"
+            fill="#EC1168"
+          >
+            <animateMotion dur="50s" repeatCount="indefinite">
+              <mpath xlink:href="#track-path" />
+            </animateMotion>
+          </circle>
+        </svg>
+      </div>
+      <div id="hidden-div_6" class="fonariki">
+        <div class="svet_1"></div>
+        <div class="svet_2"></div>
+        <div class="svet_3"></div>
+        <div class="svet_4"></div>
+        <div class="svet_5"></div>
+        <div class="svet_6"></div>
+        <div class="svet_7"></div>
+        <div class="svet_8"></div>
+        <div class="svet_9"></div>
+        <div class="svet_10"></div>
+        <div class="svet_11"></div>
+        <div class="svet_12"></div>
+        <div class="svet_13"></div>
+        <div class="svet_14"></div>
+        <div class="svet_15"></div>
+      </div>
+    </section>
+    <!-- Второй экран -->
+    <section class="second_screen">
+      <div id="clickable_bibiki_1" class="bibiki_1_grey"></div>
+      <div id="hidden_bibiki_1"></div>
+      <div id="clickable_bibiki_2" class="bibiki_2_grey"></div>
+      <div id="hidden_bibiki_2"></div>
+    </section>
+    <!-- Третий экран -->
+    <section class="third_screen">
+      <div class="pusto"></div>
+      <div class="perecluchatel"></div>
+      <div class="krug_pod"></div>
+      <div class="podlojka"></div>
+      <div class="taimer"></div>
+      <div class="nyli"><p>:</p></div>
+
+      <div id="ciferki" class="ciferki"></div>
+      <div id="kranik" class="kran"></div>
+      <div id="textik_1" class="textik_1">
+        <p class="main_textik">УТРО</p>
+        <div class="textik_1_mini"><p>8:30 – вход</p></div>
+        <div class="textik_1_mini_left"><p>9:00 – открытие</p></div>
+      </div>
+      <div id="textik_2" class="textik_2">
+        <p class="main_textik">ДЕНЬ</p>
+        <div class="textik_1_mini"><p>12:00 – картинг</p></div>
+        <div class="textik_1_mini_left"><p>13:00 – обед</p></div>
+      </div>
+      <div id="textik_3" class="textik_3">
+        <p class="main_textik">ВЕЧЕР</p>
+        <div class="textik_1_mini"><p>17:30 – концерт</p></div>
+        <div class="textik_1_mini_left"><p>19:00 – маркет</p></div>
+      </div>
+      <div id="textik_4" class="textik_4">
+        <p class="main_textik">НОЧЬ</p>
+        <div class="textik_1_mini"><p>22:00 – закрытие</p></div>
+        <div class="textik_1_mini_left"><p>23:00 – выход</p></div>
+      </div>
+    </section>
+    <!-- Четвертый экран -->
+    <section class="fourth_screen">
+      <div class="big_strochka">
+        <div class="running_stroke">
+          <p>
+            ФАКТЫ О СТРАННЫХ МАШИНАХ ФАКТЫ О СТРАННЫХ МАШИНАХ ФАКТЫ О СТРАННЫХ
+            МАШИНАХ ФАКТЫ О СТРАННЫХ МАШИНАХ
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Пятый экран -->
+    <section class="fifth_screen">
+      <div></div>
+      <div class="porshe_container_1">
+        <div class="porshe_1"></div>
+        <div class="osnovanie"></div>
+      </div>
+      <div class="porshe_container_2">
+        <div class="rastiagivanie_1">
+          <p>
+            Средняя скорость странной машины составляет 100 метров с секунду
+          </p>
+        </div>
+        <div class="porshe_2"></div>
+        <div class="osnovanie_1"></div>
+      </div>
+      <div class="porshe_container_3">
+        <div class="porshe_3"></div>
+        <div class="osnovanie"></div>
+      </div>
+      <div class="porshe_container_4">
+        <div class="rastiagivanie_1">
+          <p>
+            Странные машины могут иметь разное количество колес: <br />от 0 до
+            10
+          </p>
+        </div>
+        <div class="porshe_4"></div>
+        <div class="osnovanie_1"></div>
+      </div>
+    </section>
+    <!-- Шестой экран -->
+    <section class="sixth_screen">
+      <div class="koleso_1"><div class="krygalik_1"></div></div>
+      <div class="koleso_2"><div class="krygalik_2"></div></div>
+      <div class="koleso_3"><div class="krygalik_3"></div></div>
+    </section>
+    <!-- Седьмой экран -->
+    <section class="seventh_screen">
+      <div class="clock_krug"></div>
+      <div class="strelka"></div>
+      <div class="bordachok"></div>
+      <div class="granica">
+        <div class="biletik"></div>
+        <div id="otkritie" class="otkritie"></div>
+      </div>
+    </section>
+    <section class="podval">
+      <div id="traktor" class="traktor"></div>
+    </section>
   </body>
 </html>

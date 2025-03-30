@@ -1,27 +1,33 @@
 /* Fonts CSS */
 
-/* Подключение HSESans-Bold */
-@font-face {
-  font-family: "HSESans";
-  src: url("../fonts/HSESans-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Подключение HSESans-Regular */
-@font-face {
-  font-family: "HSESans";
-  src: url("../fonts/HSESans-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Применение шрифта к элементам */
-body {
-  font-family: "Oswald";
-}
+/* шрифт Oswald */
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/Oswald-Light.ttf") format("truetype");
   font-weight: Light;
   font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* шрифт "E4DigitalCyrillic" */
+@font-face {
+  font-family: "E4DigitalCyrillic";
+  src: url("../fonts/e4digitalcyrillic.otf") format(opentype);
+  font-weight: normal;
+  font-size: medium;
+}
+@font-face {
+  font-family: "DigitalNumbers";
+  src: url(../fonts/DigitalNumbers-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+/* Применение шрифта к элементам */
+body {
+  font-family: "E4DigitalCyrillic";
 }

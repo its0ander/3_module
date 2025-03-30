@@ -1,0 +1,146 @@
+@keyframes krugLight {
+  0%,
+  100% {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  50% {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  14.28%,
+  85.72% {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+@keyframes blinkEffect {
+  0%,
+  100% {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  50% {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut_1 {
+  0%,
+  100% {
+    opacity: 0; /* Полностью прозрачный */
+  }
+  50% {
+    opacity: 1; /* Полностью видимый */
+  }
+}
+@keyframes scrollText {
+  0% {
+    transform: translateX(
+      0.13%
+    ); /* Начальное положение: справа за пределами экрана */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Конечное положение: слева за пределами экрана */
+  }
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(37vw); /* Начальная позиция */
+  }
+  50% {
+    transform: translateY(0); /* Позиция вверху */
+  }
+}
+@keyframes stretchAndShrink {
+  0%,
+  100% {
+    transform: scale(0.5); /* Исходный размер */
+  }
+  50% {
+    transform: scale(1.2); /* Увеличиваем размер */
+  }
+}
+@keyframes moveUp {
+  0%,
+  100% {
+    transform: translateY(-38vw); /* Начальная позиция */
+  }
+  50% {
+    transform: translateY(-12vw); /* Позиция вверху */
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Начальный угол */
+  }
+  to {
+    transform: rotate(360deg); /* Конечный угол */
+  }
+}
+@keyframes spinAndPulse {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(0.8); /* Исходный размер */
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05); /* Увеличенный размер */
+  }
+  100% {
+    transform: rotate(360deg) scale(0.8); /* Полный оборот */
+  }
+}
+@keyframes spinAndPulsee {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1); /* Исходный размер */
+  }
+  50% {
+    transform: rotate(180deg) scale(0.8); /* Увеличенный размер */
+  }
+  100% {
+    transform: rotate(360deg) scale(1); /* Полный оборот */
+  }
+}
+
+@keyframes rotateStep {
+  0% {
+    transform: rotate(0deg); /* Начальный угол */
+  }
+  12.5% {
+    transform: rotate(45deg); /* Начальный угол */
+  }
+  25% {
+    transform: rotate(90deg); /* 1/4 оборота */
+  }
+  37.5% {
+    transform: rotate(135deg); /* 1/4 оборота */
+  }
+  50% {
+    transform: rotate(180deg); /* 1/2 оборота */
+  }
+  62.5% {
+    transform: rotate(225deg); /* 1/4 оборота */
+  }
+  75% {
+    transform: rotate(270deg); /* 3/4 оборота */
+  }
+  87.5% {
+    transform: rotate(315deg); /* 3/4 оборота */
+  }
+  100% {
+    transform: rotate(360deg); /* Полный оборот */
+  }
+}

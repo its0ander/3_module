@@ -1,7 +1,1150 @@
-p {
-  font-family: "HSESans";
+body {
+  background-color: #262626;
+  /* height: 300vw; */
 }
 
-body {
-  background-color: aqua;
+body::after {
+  content: "";
+  /* background-image: url(../images/maketik.png);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 6000px;
+  z-index: -1; */
+  /* background-color: #262626; */
+}
+/* первый экран с картой */
+.logo_main {
+  background-image: url(../images/logo_main_pink.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: 4.9vw;
+  margin-left: 30vw;
+  /* position: absolute; */
+}
+.border_logo {
+  width: 43vw;
+  height: 13.5vw;
+  margin-top: -13vw;
+  margin-left: 28vw;
+  border: 0.2vw white solid;
+  border-radius: 1.1vw;
+  position: absolute;
+}
+.provodochcki {
+  background-image: url(../images/provoda.png);
+  width: 92.1vw;
+  height: 81.4vw;
+  margin-top: -8vw;
+  margin-left: 3.5vw;
+  background-size: contain;
+}
+
+.text_firstecran {
+  margin-top: -61vw;
+  margin-left: 28vw;
+  font-size: 4vw;
+  color: white;
+}
+.text_carta_1 {
+  font-family: "Oswald";
+  position: absolute;
+  margin-top: 41vw;
+  margin-left: 18.4vw;
+  font-size: 3vw;
+  color: white;
+}
+.text_carta_2 {
+  font-family: "Oswald";
+  position: absolute;
+  margin-top: 41vw;
+  margin-left: 54vw;
+  font-size: 3vw;
+  color: white;
+}
+
+.tochka_karta_2 {
+  background-image: url(../images/tochka_karta.png);
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  margin-top: 14vw;
+  margin-left: 25.8vw;
+  z-index: 100;
+}
+.tochka_karta_3 {
+  background-image: url(../images/tochka_karta.png);
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  margin-top: -1vw;
+  margin-left: 50.8vw;
+  z-index: 100;
+}
+.tochka_karta_4 {
+  background-image: url(../images/tochka_karta.png);
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  margin-top: -13.5vw;
+  margin-left: 65.8vw;
+  z-index: 100;
+}
+.tochka_karta_5 {
+  background-image: url(../images/tochka_karta.png);
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  margin-top: 8.8vw;
+  margin-left: 77.8vw;
+  z-index: 100;
+}
+
+.tochka_karta_6 {
+  background-image: url(../images/tochka_karta.png);
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  margin-top: -5.2vw;
+  margin-left: 13.8vw;
+}
+.krujok_1 {
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 100%;
+  background-color: #ec1168;
+  margin-top: -2.6vw;
+  margin-left: 51.7vw;
+  opacity: 0; /* Начальная прозрачность */
+  animation: krugLight 3s ease-in-out infinite; /* Зацикленная анимация */
+}
+
+.border_mini {
+  width: 74.2vw;
+  height: 5.5vw;
+  margin-top: -6vw;
+  margin-left: 12.5vw;
+  border: 0.2vw white solid;
+  border-radius: 1.1vw;
+}
+.carta {
+  background-image: url(../images/carta_black.png);
+  width: 61.5vw;
+  height: 29.4vw;
+  margin-top: -53.4vw;
+  margin-left: 19vw;
+  background-size: contain;
+  position: absolute;
+  z-index: -100;
+}
+.border_karta {
+  width: 74.2vw;
+  height: 52.8vw;
+  margin-top: -7.1vw;
+  margin-left: 12.5vw;
+  border: 0.2vw white solid;
+  border-radius: 1.1vw;
+  /* position: absolute; */
+  /* z-index: 2; */
+  z-index: -3;
+  position: relative;
+}
+#clickable-div_1 {
+  background-image: url(../images/tochka_karta.png);
+  width: 3.9vw;
+  height: 3.9vw;
+  background-size: contain;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  /* border: 1px solid #ccc;
+  margin-bottom: 20px; */
+  margin-top: 38.2vw;
+  margin-left: 28vw;
+  position: absolute;
+  z-index: 4;
+}
+
+/* Стили для второго div (изначально скрыт) */
+#hidden-div_1 {
+  background-image: url(../images/pop-up_4.png);
+  width: 33.3vw;
+  height: 5.3vw;
+  /* background-color: lightgreen; */
+  display: none; /* Скрываем изначально */
+  align-items: center;
+  /* justify-content: center;
+  border: 1px solid #ccc; */
+  margin-top: 37.5vw;
+  margin-left: 32vw;
+  position: absolute;
+  z-index: 4;
+  background-size: contain;
+}
+#clickable-div_2 {
+  background-image: url(../images/tochka_karta.png);
+  width: 3.9vw;
+  height: 3.9vw;
+  background-size: contain;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  /* border: 1px solid #ccc;
+  margin-bottom: 20px; */
+  margin-top: 57vw;
+  margin-left: 26vw;
+  position: absolute;
+  z-index: 4;
+}
+
+/* Стили для второго div (изначально скрыт) */
+#hidden-div_2 {
+  background-image: url(../images/pop-up_3.png);
+  width: 34.5vw;
+  height: 5.3vw;
+  /* background-color: lightgreen; */
+  display: none; /* Скрываем изначально */
+  align-items: center;
+  /* justify-content: center;
+  border: 1px solid #ccc; */
+  margin-top: 56vw;
+  margin-left: 30vw;
+  position: absolute;
+  z-index: 4;
+  background-size: contain;
+}
+#clickable-div_3 {
+  background-image: url(../images/tochka_karta.png);
+  width: 3.9vw;
+  height: 3.9vw;
+  background-size: contain;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  /* border: 1px solid #ccc;
+  margin-bottom: 20px; */
+  margin-top: 50.5vw;
+  margin-left: 66vw;
+  position: absolute;
+  z-index: 4;
+}
+
+/* Стили для второго div (изначально скрыт) */
+#hidden-div_3 {
+  background-image: url(../images/pop-up_1.png);
+  width: 18.4vw;
+  height: 5.3vw;
+  /* background-color: lightgreen; */
+  display: none; /* Скрываем изначально */
+  align-items: center;
+  /* justify-content: center;
+  border: 1px solid #ccc; */
+  margin-top: 49vw;
+  margin-left: 70vw;
+  position: absolute;
+  z-index: 4;
+  background-size: contain;
+}
+#clickable-div_4 {
+  background-image: url(../images/tochka_karta.png);
+  width: 3.9vw;
+  height: 3.9vw;
+  background-size: contain;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  /* border: 1px solid #ccc;
+  margin-bottom: 20px; */
+  margin-top: 64.5vw;
+  margin-left: 74vw;
+  position: absolute;
+  z-index: 4;
+}
+
+/* Стили для второго div (изначально скрыт) */
+#hidden-div_4 {
+  background-image: url(../images/pop-up_2.png);
+  width: 18.35vw;
+  height: 5.3vw;
+  /* background-color: lightgreen; */
+  display: none; /* Скрываем изначально */
+  align-items: center;
+  /* justify-content: center;
+  border: 1px solid #ccc; */
+  margin-top: 63vw;
+  margin-left: 78vw;
+  position: absolute;
+  z-index: 4;
+  background-size: contain;
+}
+#clickable-div_5 {
+  background-image: url(../images/tochka_karta.png);
+  width: 3.9vw;
+  height: 3.9vw;
+  background-size: contain;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  /* border: 1px solid #ccc;
+  margin-bottom: 20px; */
+  margin-top: 61vw;
+  margin-left: 52.5vw;
+  position: absolute;
+  z-index: 4;
+}
+
+/* Стили для второго div (изначально скрыт) */
+#hidden-div_5 {
+  background-image: url(../images/pop-up_5.png);
+  width: 28.9vw;
+  height: 5.3vw;
+  /* background-color: lightgreen; */
+  display: none; /* Скрываем изначально */
+  align-items: center;
+  /* justify-content: center;
+  border: 1px solid #ccc; */
+  margin-top: 60vw;
+  margin-left: 56.5vw;
+  position: absolute;
+  z-index: 4;
+  background-size: contain;
+}
+.svet_1 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -71vw;
+  margin-left: -1.5vw;
+  position: absolute;
+  z-index: -2;
+}
+.svet_2 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -59.4vw;
+  margin-left: -0.3vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -90deg;
+}
+.svet_3 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -42.6vw;
+  margin-left: -0.3vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -90deg;
+}
+.svet_4 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -25.75vw;
+  margin-left: -0.3vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -90deg;
+}
+.svet_5 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -9vw;
+  margin-left: -0.3vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -90deg;
+}
+.svet_6 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -3.2vw;
+  margin-left: 0.9vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -180deg;
+}
+.svet_7 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -3.2vw;
+  margin-left: 17.2vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -180deg;
+}
+.svet_8 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -3.2vw;
+  margin-left: 33.5vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -180deg;
+}
+.svet_9 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -3.2vw;
+  margin-left: 49.8vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -180deg;
+}
+.svet_10 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -3.2vw;
+  margin-left: 66.2vw;
+  position: absolute;
+  z-index: -2;
+  rotate: -180deg;
+}
+.svet_11 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -9.1vw;
+  margin-left: 78.4vw;
+  position: absolute;
+  z-index: -2;
+  rotate: 90deg;
+}
+.svet_12 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -25.8vw;
+  margin-left: 78.4vw;
+  position: absolute;
+  z-index: -2;
+  rotate: 90deg;
+}
+.svet_13 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -42.6vw;
+  margin-left: 78.4vw;
+  position: absolute;
+  z-index: -2;
+  rotate: 90deg;
+}
+.svet_14 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -56.6vw;
+  margin-left: 78.4vw;
+  position: absolute;
+  z-index: -2;
+  rotate: 90deg;
+}
+.svet_15 {
+  background-image: url(../images/fonarik.png);
+  width: 21vw;
+  height: 19vw;
+  background-size: contain;
+  margin-top: -71.1vw;
+  margin-left: 77.3vw;
+  position: absolute;
+  z-index: -2;
+}
+#clickable-div_6 {
+  display: flex;
+  cursor: pointer;
+}
+#hidden-div_6 {
+  display: none; /* Скрываем изначально */
+  margin-top: 24.15vw;
+  z-index: -5;
+  position: relative;
+}
+/* изменение цвета у карты при нажатии на лого */
+.target.active {
+  color: #2e2e2e; /* Цвет при активном состоянии */
+}
+.color_2.active {
+  background-color: #d9d9d9;
+  border-color: #101010;
+}
+.color_1.active {
+  background-color: #9b9b9b;
+  border-color: #101010;
+}
+.carta_cvet {
+  background-image: url(../images/karta_cvet.png);
+  width: 61vw;
+  height: 29.3vw;
+  margin-top: -53.2vw;
+  margin-left: 19.2vw;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.logo_light {
+  background-image: url(../images/logo.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12.1vw;
+  margin-left: 30vw;
+  display: none;
+}
+.logo_1 {
+  background-image: url(../images/logo_1.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12.1vw;
+  margin-left: 30vw;
+  opacity: 0;
+  animation: fadeInOut 7s ease-in-out infinite;
+}
+.logo_2 {
+  background-image: url(../images/logo_2.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12vw;
+  margin-left: 30vw;
+  opacity: 0;
+  animation: fadeInOut 7s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.logo_3 {
+  background-image: url(../images/logo_3.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12vw;
+  margin-left: 30vw;
+  opacity: 0;
+  animation: fadeInOut 7s ease-in-out infinite;
+  animation-delay: 2s;
+}
+.logo_4 {
+  background-image: url(../images/logo_4.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12vw;
+  margin-left: 30vw;
+  opacity: 0;
+  animation: fadeInOut 7s ease-in-out infinite;
+  animation-delay: 3s;
+}
+.logo_5 {
+  background-image: url(../images/logo_5.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12vw;
+  margin-left: 30vw;
+  opacity: 0;
+  animation: fadeInOut 7s ease-in-out infinite;
+  animation-delay: 4s;
+}
+.logo_6 {
+  background-image: url(../images/logo_6.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12vw;
+  margin-left: 30vw;
+  opacity: 0;
+  animation: fadeInOut 7s ease-in-out infinite;
+  animation-delay: 5s;
+}
+.logo_7 {
+  background-image: url(../images/logo_7.png);
+  width: 40vw;
+  height: 12vw;
+  background-size: contain;
+  margin-top: -12vw;
+  margin-left: 30vw;
+  opacity: 0;
+  animation: fadeInOut 7s ease-in-out infinite;
+  animation-delay: 6s;
+}
+
+.animated-div {
+  transition: transform 0.5s ease-in-out;
+}
+.animated-div:hover {
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+.krujok_2 {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #ec1168;
+  z-index: 5;
+  border-radius: 50%; /* Делаем круглую форму */
+  position: absolute;
+  /* Для свободного перемещения по экрану */
+  opacity: 0; /* Начальная прозрачность */
+  margin-top: 2.3vw;
+  margin-left: 51.7vw;
+  /* animation: moveAndBlink 25s ease-in-out infinite; */
+  /* Зацикленная анимация */
+}
+
+/* Стили для контейнера */
+.track-container {
+  width: 61.5vw;
+  height: 29.4vw;
+  margin-top: -53.4vw;
+  margin-left: 19vw;
+  width: 100%;
+  /* height: auto; */
+  z-index: 3;
+  position: relative;
+}
+
+/* Эффект мигания */
+#moving-dot {
+  animation: blinkEffect 1s ease-in-out infinite;
+}
+
+.track {
+  width: 69vw;
+  height: 33.5vw;
+  margin-top: 12vw;
+  z-index: 10;
+  margin-left: 0.1vw;
+}
+.circle {
+  z-index: 10;
+}
+.first_screen {
+  height: 93.2vw;
+  width: 100vw;
+  border: 0.3vw #cacaca solid;
+  overflow: hidden;
+}
+.bibiki_1_grey {
+  background-image: url(../images/bibiki_high_grey.png);
+  background-size: contain;
+  width: 98.5vw;
+  height: 14vw;
+  margin-top: 1vw;
+  /* margin-left: 1vw; */
+  position: relative;
+  /* z-index: -2; */
+}
+#hidden_bibiki_1 {
+  background-image: url(../images/bibiki_high_pink.png);
+  background-size: contain;
+  width: 102.5vw;
+  height: 14vw;
+  margin-top: -14vw;
+  margin-left: -4vw;
+  position: relative;
+  /* z-index: 1; */
+  display: none;
+}
+
+.bibiki_2_grey {
+  background-image: url(../images/bibiki_low_grey.png);
+  background-size: contain;
+  width: 99.9vw;
+  height: 15vw;
+  margin-top: -4vw;
+  /* margin-left: -4vw; */
+  position: relative;
+  /* z-index: 1; */
+}
+#hidden_bibiki_2 {
+  background-image: url(../images/bibiki_low_cvet.png);
+  background-size: contain;
+  width: 134.9vw;
+  height: 15vw;
+  margin-top: -15vw;
+  margin-left: -20.2vw;
+  position: relative;
+  display: none;
+}
+.second_screen {
+  overflow: hidden;
+  height: 26vw;
+  width: 100vw;
+  border: 0.3vw #cacaca solid;
+}
+/* Третий экран */
+.pusto {
+  width: 100vw;
+  height: 1vw;
+  /* background-color: #ec1168; */
+}
+.perecluchatel {
+  background-image: url(../images/perekluchatel.png);
+  background-size: contain;
+  width: 26.9vw;
+  height: 26.9vw;
+  margin-left: 2.9vw;
+  margin-top: 1.5vw;
+}
+.krug_pod {
+  width: 24.5vw;
+  height: 24.5vw;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  position: relative;
+  z-index: -1;
+  margin-top: -26vw;
+  margin-left: 3.9vw;
+}
+.podlojka {
+  background-image: url(../images/podlojka.png);
+  background-size: contain;
+  width: 54.3vw;
+  height: 29.2vw;
+  margin-top: -26vw;
+  margin-left: 1.9vw;
+}
+.kran {
+  cursor: pointer;
+  background-image: url(../images/kran.png);
+  background-size: contain;
+  width: 4.6vw;
+  height: 12.1vw;
+  margin-top: -20.9vw;
+  margin-left: 13.9vw;
+  rotate: -90deg;
+}
+.textik_1 {
+  width: 38.2vw;
+  height: 7vw;
+  border-radius: 1.1vw;
+  background-color: #e6fb03;
+  margin-top: -21vw;
+  margin-left: 57.5vw;
+  /* text-align: center;
+  font-size: 3.75vw; */
+  display: none;
+  text-align: center;
+  font-size: 3.75vw;
+}
+.main_textik {
+  text-align: center;
+  font-size: 3vw;
+  position: absolute;
+  margin-left: 14vw;
+}
+.textik_1_mini {
+  font-family: "Oswald";
+  font-size: 2.5vw;
+  margin-top: 3.5vw;
+  margin-left: 1vw;
+  /* position: relative; */
+  position: absolute;
+}
+.textik_1_mini_left {
+  font-family: "Oswald";
+  font-size: 2.5vw;
+  margin-top: 3.5vw;
+  margin-left: 22vw;
+  position: relative;
+}
+.textik_2 {
+  width: 38.2vw;
+  height: 7vw;
+  border-radius: 1.1vw;
+  background-color: #e6fb03;
+  margin-top: -13.3vw;
+  margin-left: 57.5vw;
+  display: none;
+}
+.textik_3 {
+  width: 38.2vw;
+  height: 7vw;
+  border-radius: 1.1vw;
+  background-color: #e6fb03;
+  margin-top: -5.3vw;
+  margin-left: 57.5vw;
+  display: none;
+}
+.textik_4 {
+  width: 38.2vw;
+  height: 7vw;
+  border-radius: 1.1vw;
+  background-color: #e6fb03;
+  margin-top: 2vw;
+  margin-left: 57.5vw;
+  display: none;
+}
+#kranik {
+  transition: transform 0.5s ease-in-out; /* Плавное изменение */
+}
+.third_screen {
+  border: 0.3vw #cacaca solid;
+  height: 33.5vw;
+  width: 100vw;
+}
+.taimer {
+  width: 15.1vw;
+  height: 4vw;
+  margin-top: -17.2vw;
+  margin-left: 38.5vw;
+  /* background-color: #ec1168; */
+  border: 0.3vw #9b9b9b solid;
+  position: absolute;
+}
+.ciferki {
+  margin-top: -16.6vw;
+  margin-left: 40.5vw;
+  position: absolute;
+  width: 13vw;
+  height: 3.5vw;
+  /* border: 0.3vw #ec1168 solid; */
+  font-family: "DigitalNumbers";
+  font-size: 3vw;
+  color: #e6fb03;
+}
+#ciferki {
+  transition: opacity 0.5s ease-in-out;
+}
+.nyli {
+  width: 13vw;
+  height: 3.5vw;
+  margin-top: -16.6vw;
+  margin-left: 45vw;
+  position: absolute;
+  font-family: "DigitalNumbers";
+  font-size: 3vw;
+  color: #e6fb03;
+}
+.nyli {
+  animation: fadeInOut_1 2s infinite; /* Зацикленная анимация */
+}
+/* Четвертый экран */
+.big_strochka {
+  width: 100%;
+  position: relative;
+}
+.running_stroke {
+  font-size: 6vw;
+  height: 6vw;
+  color: #cacaca;
+  margin-top: 2vw;
+  /* Ширина контейнера */
+  overflow: hidden; /* Скрываем переполнение */
+  white-space: nowrap;
+  /* Запрещаем перенос текста */
+  position: absolute;
+}
+.running_stroke {
+  display: inline-block; /* Делаем текст блочным элементом */
+  /* padding-left: 100%; */
+  /* Начинаем за пределами видимой области */
+  animation: scrollText 10s linear infinite; /* Анимация */
+  transition: color 0.3s ease-in-out;
+}
+.fourth_screen {
+  border: 0.3vw #cacaca solid;
+  width: 100vw;
+  height: 9.7vw;
+  overflow: hidden;
+}
+.running_stroke:hover {
+  color: #ec1168;
+}
+/* Пятый экран */
+.porshe_1 {
+  background-image: url(../images/porshe.png);
+  background-size: contain;
+  width: 19.8vw;
+  height: 49vw;
+  margin-top: 1vw;
+  margin-left: 2.4vw;
+  animation: moveUpDown 5s infinite ease-in-out; /* Анимация */
+}
+.porshe_container_1 {
+  width: 24.6vw;
+  height: 51vw;
+  border: 0.3vw #cacaca solid;
+  position: relative;
+  z-index: 2;
+  margin-top: -0.5vw;
+}
+.porshe_container_2 {
+  width: 24.6vw;
+  height: 51vw;
+  border: 0.3vw #cacaca solid;
+  position: relative;
+  z-index: 2;
+  margin-left: 25.1vw;
+  margin-top: -51.6vw;
+}
+.porshe_container_3 {
+  width: 24.6vw;
+  height: 51vw;
+  border: 0.3vw #cacaca solid;
+  position: relative;
+  z-index: 2;
+  margin-left: 50vw;
+  margin-top: -51.6vw;
+}
+.porshe_container_4 {
+  width: 24.6vw;
+  height: 51vw;
+  border: 0.3vw #cacaca solid;
+  position: relative;
+  z-index: 2;
+  margin-left: 75vw;
+  margin-top: -51.6vw;
+}
+.porshe_2 {
+  background-image: url(../images/porshe.png);
+  background-size: contain;
+  width: 19.8vw;
+  height: 49vw;
+  margin-top: 37vw;
+  margin-left: 2.4vw;
+  animation: moveUp 5s infinite ease-in-out;
+  /* Анимация */
+}
+.porshe_3 {
+  background-image: url(../images/porshe.png);
+  background-size: contain;
+  width: 19.8vw;
+  height: 49vw;
+  margin-top: 1vw;
+  margin-left: 2.4vw;
+  animation: moveUpDown 5s infinite ease-in-out; /* Анимация */
+}
+.porshe_4 {
+  background-image: url(../images/porshe.png);
+  background-size: contain;
+  width: 19.8vw;
+  height: 49vw;
+  margin-top: 37vw;
+  margin-left: 2.4vw;
+  animation: moveUp 5s infinite ease-in-out;
+  /* Анимация */
+}
+.fifth_screen {
+  width: 100vw;
+  height: 50vw;
+  border: 0.3vw #cacaca solid;
+  overflow: hidden;
+}
+/* .porshe_contsiner_1:hover {
+  animation-play-state: paused; /* Приостанавливаем анимацию */
+.rastiagivanie_1 {
+  color: #cacaca;
+  font-family: "Oswald";
+  font-size: 2vw;
+  width: 16vw;
+  height: 8.75vw;
+  margin-top: 4vw;
+  margin-left: 4.3vw;
+  overflow: hidden; /* Скрываем переполнение */
+  animation: stretchAndShrink 5s infinite ease-in-out; /* Анимация */
+}
+.rastiagivanie_1:hover {
+  color: #e6fb03;
+}
+.osnovanie {
+  width: 19.8vw;
+  height: 4vw;
+  margin-top: -3vw;
+  margin-left: 2.4vw;
+  /* background-color: #595959; */
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #bfbfbf,
+    #595959
+  ); /* Градиент сверху вниз */
+}
+.osnovanie_1 {
+  width: 19.8vw;
+  height: 4vw;
+  margin-top: -52vw;
+  margin-left: 2.4vw;
+  /* background-color: #595959; */
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #bfbfbf,
+    #595959
+  ); /* Градиент сверху вниз */
+}
+/* Шестой экран */
+.koleso_1 {
+  background-image: url(../images/koleso.png);
+  background-size: contain;
+  width: 29.1vw;
+  height: 28.9vw;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  animation: spinAndPulsee 8s linear infinite; /* Анимация вращения */
+}
+.koleso_2 {
+  background-image: url(../images/koleso.png);
+  background-size: contain;
+  width: 29.1vw;
+  height: 28.9vw;
+  margin-top: -29vw;
+  margin-left: 35vw;
+  animation: spinAndPulse 8s linear infinite; /* Анимация вращения */
+}
+.koleso_3 {
+  background-image: url(../images/koleso.png);
+  background-size: contain;
+  width: 29.1vw;
+  height: 28.9vw;
+  margin-top: -29vw;
+  margin-left: 68vw;
+  animation: spinAndPulsee 8s linear infinite; /* Анимация вращения */
+}
+.krygalik_1 {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: #9b9b9b;
+  margin-top: 11.5vw;
+  margin-left: 12.3vw;
+  position: absolute;
+}
+.krygalik_2 {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: #9b9b9b;
+  margin-top: 11.5vw;
+  margin-left: 12.3vw;
+  position: absolute;
+}
+.krygalik_3 {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: #9b9b9b;
+  margin-top: 11.5vw;
+  margin-left: 12.3vw;
+  position: absolute;
+}
+.sixth_screen {
+  border: 0.3vw #cacaca solid;
+  width: 100vw;
+  height: 31vw;
+}
+/* Седьмой экран */
+.bordachok {
+  background-image: url(../images/bordachok.png);
+  background-size: contain;
+  width: 91vw;
+  height: 54.4vw;
+  margin-top: 1vw;
+  margin-left: 4vw;
+  position: relative;
+  z-index: -3;
+}
+.granica {
+  width: 80.7vw;
+  height: 35vw;
+  /* background-color: #ec1168; */
+  margin-top: -36.6vw;
+  margin-left: 9vw;
+  overflow: hidden;
+}
+.biletik {
+  background-image: url(../images/biletik.svg);
+  width: 75vw;
+  height: 32.6vw;
+  background-size: contain;
+  margin-top: 2vw;
+  margin-left: 3vw;
+  position: relative;
+  z-index: -1;
+}
+.otkritie {
+  background-image: url(../images/otkritie_1.svg);
+  width: 77vw;
+  height: 33.6vw;
+  background-size: contain;
+  margin-top: -34vw;
+  margin-left: 2vw;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 2s ease-in-out; /* Плавная анимация */
+}
+.strelka {
+  background-image: url(../images/strelka.png);
+  background-size: contain;
+  width: 1.1vw;
+  height: 4.25vw;
+  position: absolute;
+  margin-top: 5vw;
+  margin-left: 49vw;
+  transform-origin: bottom; /* Точка вращения внизу */
+  animation: rotateStep 8s infinite ease-in-out;
+  /* Анимация с шагами */
+}
+.clock_krug {
+  width: 2.2vw;
+  height: 2.2vw;
+  border-radius: 50%;
+  background-color: #595959;
+  border: 0.1vw #262626 solid;
+  position: absolute;
+  z-index: 2;
+  margin-top: 8vw;
+  margin-left: 48.5vw;
+}
+.seventh_screen {
+  width: 100vw;
+  height: 58vw;
+  border: 0.3vw #cacaca solid;
+}
+/* Подвал */
+.traktor {
+  background-image: url(../images/traktor.svg);
+  background-size: contain;
+  width: 151vw;
+  height: 38vw;
+  margin-top: 3vw;
+  margin-left: -64vw;
+  position: relative;
+  transition: left 2s ease-in-out; /* Плавная анимация */
+}
+.podval {
+  overflow: hidden;
+  width: 100vw;
+  height: 44.1vw;
+  border: 0.3vw #cacaca solid;
 }
